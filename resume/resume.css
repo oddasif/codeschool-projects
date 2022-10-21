@@ -22,7 +22,7 @@
 /* side-bar css properties */
 #lhs {
     width: 30vw;
-    height: inherit;
+    height: auto;
     background-color: gray;
 }
 
@@ -53,11 +53,11 @@
 }
 
 #lhs h2{
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 .icons {
-   font-size: 2vw;
+    font-size: 1.8vw;
     margin: 0 0.8vw 0 0;
 }
 
@@ -66,7 +66,7 @@
     display: flex;
     justify-content: flex-start;
     margin: 1vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
 
@@ -76,7 +76,7 @@
     width: auto;
     height: inherit;
     padding: 1vw 1vw 0 1vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
 h1 {
@@ -85,14 +85,13 @@ h1 {
 }
 
 #about {
-    font-size: 1.2vw;
-    margin: 2.68vw 0;
+    margin: 2.21vw 0;
     text-align: justify;
 }
 
 #rhs h2 {
-    font-size: 2vw;
-    padding: 1.5vw 0;
+    font-size: 1.8vw;
+    padding: 1.5vw 0 1vw 0;
 }
 
 #edu-grid {
@@ -100,8 +99,35 @@ h1 {
     grid-template-columns: 8vw 10vw auto;
 }
 
-.edu p {
-    font-size: 1.2vw;
-    line-height: 2vw;
+#edu p {
+    line-height: 2.2vw;
 }
 
+#cert-grid{
+    display: grid;
+    grid-template-columns: 8vw auto;
+    line-height: 2.2vw;
+}
+
+#tech-skills li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#social-profiles li {
+    list-style-type: none;
+        /* display: block;
+        text-align: left; */
+        padding: 0 0 2vw 2vw;
+}
+
+#rhs a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+#rhs a:hover {
+    color: white;  
+}
