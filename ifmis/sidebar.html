@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- Bootstrap CSS via CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -16,13 +16,27 @@
 </head>
 <body>
     <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
-        <a href="#" class="navbar-brand mx-auto my-1">
-            <img src="images/ifmis-logo.png" alt="ifmis-logo" width="200px">
+        <a href="#" class="navbar-brand mx-auto my-1 py-2">
+            <img src="images/ifmis-logo.png" alt="ifmis-logo" width="250px">
         </a>
-        <ul class="navbar-nav d-flex flex-column w-100">
+        <ul class="navbar-nav d-flex flex-column border-top py-3 w-100">
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Home</a></li>
-            <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Masters</a></li>
-            <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Transactions</a></li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Masters</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Option 1</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Option 2</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Option 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Transactions</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Option 1</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Option 2</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Option 3</a></li>
+                </ul>
+            </li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Reports</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Return Cheque Generation</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Forest Transactions</a></li>
@@ -30,21 +44,14 @@
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">E-Kuber Returns Received List</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">E-Kuber Return Challan Print</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">UTR Search</a></li>
-            <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Failed Transactions(ACK Reject)</a></li>
+            <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Failed Transactions (ACK Reject)</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Check Status Report</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Rejected Cheques due to FinYear End</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">FinYear New Cheques Report</a></li>
-            <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Pd Budget Check</a></li>
+            <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">PD Budget Check</a></li>
             <li class="nav-item w-100"><a href="#" class="nav-link text-light pl-4">Update Receipts Used Amount </a></li>
-            <!-- <li class="nav-item dropdown w-100">
-                <a href="#" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Service</a>
-                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Service 01</a></li>
-                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Service 02</a></li>
-                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Service 03</a></li>
-                </ul>
-            </li> -->
         </ul>
+    <!-- end of sidebar -->
     </nav>
     <section class="p-4 my-container">
         <button class="btn my-4" id="menu-btn">Toggle Sidebar</button>
@@ -59,6 +66,9 @@
             sint illo officiis? Saepe dolores fugiat rerum, voluptatem sunt culpa nihil accusantium voluptates unde hic magnam quos est perspiciatis recusandae incidunt quod laborum vitae. Harum modi inventore ea odit eaque ut maiores voluptate nihil
             aspernatur voluptatibus exercitationem ipsa nam animi neque tempore, eligendi, repellendus praesentium ex voluptatum? Magni laboriosam nemo, assumenda veniam aperiam eum! Eos, ipsum. Eum illo quos quo tempora excepturi reprehenderit numquam
             voluptas! Blanditiis autem optio labore quisquam culpa, tempora minus eum repudiandae ea voluptatem quia obcaecati velit cum dolorum esse dolorem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo praesentium vitae provident! Nulla quae consectetur ab aut a architecto, illo dolor exercitationem sed eius enim sapiente incidunt fugiat praesentium vitae accusamus ad ducimus distinctio culpa quos quas. Ea non explicabo quidem similique consequatur ipsa corporis facere delectus? Deleniti ipsum laborum voluptatibus minima libero similique sapiente cupiditate esse quaerat itaque magnam sit eveniet pariatur animi possimus odio, sequi obcaecati laudantium. At placeat voluptate vitae perferendis temporibus quo autem, voluptas qui eius obcaecati ad porro tempora aliquid error nulla iusto totam? Est culpa earum, in soluta rem sequi fugiat facere dolores, architecto alias doloremque accusantium similique odio cum sapiente porro beatae explicabo eveniet minima modi dolor sint, quae reprehenderit dicta. Repellendus id sequi, ipsum assumenda similique mollitia modi! Aperiam ullam accusantium debitis nisi totam est ea eum velit, illo dolorum sapiente quo doloremque ipsa voluptates assumenda! Totam dolores deserunt molestiae tempora et asperiores ratione dicta fugiat? Voluptate, deleniti? Molestiae, possimus. Ipsam eveniet laboriosam quas cum? Dicta eveniet officia modi. Incidunt consectetur quas sint, rem nesciunt eveniet ipsum pariatur ab qui maiores magnam itaque voluptas corrupti ex dolor libero nihil ea, odio quisquam quae! Eaque, iste neque dicta animi earum dolor reiciendis aspernatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae odit maxime mollitia harum libero nesciunt accusantium similique eligendi distinctio reiciendis est maiores quidem fugiat, tempora perferendis dolorem. Fugiat, repellendus ipsam ullam vero magni modi voluptates iure minus, hic nisi incidunt accusantium possimus eius ad? Maiores reprehenderit minus repudiandae dolor esse dignissimos at officia ipsam mollitia harum ipsum, minima eligendi, sint ab blanditiis ea! Minima sed itaque enim. Cumque, ea quis! Tempora magnam, ad impedit nostrum, aliquam corporis quam similique vitae laborum facere illo, voluptatibus id itaque. Debitis commodi dolorum culpa alias incidunt vitae ab voluptas voluptates quasi, quis illum facilis nostrum fugiat repellendus quod mollitia cum? Asperiores sunt aperiam reprehenderit necessitatibus facilis rerum error natus eaque magni dolorum aut ratione officiis ea esse deserunt at ullam modi eius, voluptatem nihil. Voluptas aperiam ipsam praesentium placeat animi repudiandae blanditiis ab neque soluta voluptatum distinctio amet, libero corrupti tempora, necessitatibus sit. Ratione obcaecati ad doloremque quia repellendus. Impedit necessitatibus non eveniet, velit delectus obcaecati aliquam commodi tempora libero similique laudantium ratione placeat expedita accusamus quos sapiente esse sit corrupti repellendus perferendis provident ipsam alias eligendi? Similique neque doloremque necessitatibus nulla sed laboriosam harum, recusandae, adipisci voluptatem doloribus assumenda rem optio saepe.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda obcaecati itaque quo expedita modi veritatis vero quaerat sint voluptates dolor qui voluptate magni eligendi sunt mollitia repellat, nesciunt laborum nobis dolore et ratione illum tenetur. Quisquam ducimus provident at delectus molestias quaerat? Qui, totam. Atque tenetur, officiis perspiciatis, illum quos quis saepe nisi eaque aspernatur asperiores dolor impedit facilis cum! Voluptate, laborum nesciunt. Excepturi unde eius labore similique dolorum. Animi veniam accusamus officiis ratione assumenda, consectetur, sint esse aliquid id aut eos eaque, impedit placeat ipsam quisquam commodi voluptatum deleniti beatae ut suscipit qui vel iusto doloremque magnam? Maiores repellendus cumque rerum fugit necessitatibus, tempore harum quidem at sapiente fuga repellat provident deleniti quisquam. Asperiores nostrum quam placeat, nemo unde nesciunt quos aut itaque odit soluta odio quas. Aliquid debitis voluptatum earum totam minima, voluptatem tenetur itaque veritatis facilis temporibus ipsam corrupti, delectus facere ipsum dolorem molestiae laboriosam repellendus sapiente! Numquam excepturi culpa corrupti. Animi voluptate cupiditate porro molestiae vel similique dolores ipsa aspernatur voluptas esse eveniet, obcaecati illum nam laborum repudiandae, nulla ipsam ducimus recusandae necessitatibus et tempora. Voluptatibus saepe possimus velit autem doloremque suscipit, commodi officiis optio quia incidunt cum rem? Magni deserunt quasi aspernatur hic amet enim?</p>
     </section>
 
     <script>
