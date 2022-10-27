@@ -1,0 +1,74 @@
+body {
+    background-color: rgba(0,0,0,.1);
+}
+
+.container {
+    background-color: white;
+    margin: 1vw auto;
+    border-radius: .8vw;
+    height: 200vh;
+}
+
+/* Styles for sidebar */
+
+#sidebar {
+    height: 100%;
+    background-color: #1b364d;
+}
+
+#sidebar li {
+    list-style-type: none;
+}
+
+#sidebar li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* CSS for Header */
+#header {
+    background-image: url(images/header-bg.jpg);
+}
+
+.nav-links-li {
+    background-color: rgba(210, 215, 211, .3);
+    color: white;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.nav-links-li a {
+    color: white;
+}
+.nav-links-li a:hover {
+    color:white;
+}
+
+.nav-links-li:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+#heading {
+    background-color: #D3D3D3;
+    border-radius: .8vw .8vw 0 0;
+}
+
+#text-box {
+    background-color: #D3D3D3;
+    /* margin: 1vw .5vw; */
+    padding: .5vw;
+    border-radius: .6vw;
+}
+
+#text-box li {
+    text-align: justify;
+}
+
+.form-group .required .control-label:after {
+    content:"*";
+    color: red;
+}
